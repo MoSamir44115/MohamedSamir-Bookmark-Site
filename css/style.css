@@ -1,0 +1,168 @@
+:root {
+    --bs-body-bg: #ebe7c6;
+    --bs-border-color: #5e5e5eb5;
+}
+
+
+body {
+    background-color: #F7ECDE;
+    font-family: "PT Sans Caption", sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+
+}
+
+
+
+
+h6 {
+    color: #ffca00;
+
+}
+
+.table>:not(caption)>*>* {
+    color: black;
+}
+
+.vh-cust {
+    height: 200vh;
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.bg-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/old-books-on-a-wooden-table-in-the-library-selective-focus-book-stack-with-ladder-on-sky-with-clouds-background-free-photo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1.text-center {
+    color: #ff9d06;
+    position: relative;
+    font-family: "Pacifico", cursive;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 60px;
+    z-index: 11;
+}
+
+h1.text-center::before {
+    content: '';
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #FEC260;
+    width: 315px;
+    height: 25%;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+h1.text-center:hover::before {
+    background-color: #bb4120;
+    height: 40%;
+}
+
+
+
+p.text-center {
+    color: rgba(255, 255, 255, 0.5);
+    background: linear-gradient(89deg, rgb(0, 255, 13) 33%, rgb(255, 143, 0) 60%);
+    background-clip: text;
+    font-family: "Righteous", sans-serif;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+
+hr {
+    border-top: 2px rgb(255, 255, 255) dotted;
+    opacity: 1;
+
+}
+
+.form-control:focus {
+    border-color: rgb(226, 139, 24);
+    box-shadow: #ff9d06;
+    border-width: 1px;
+}
+
+
+h6 {
+    font-weight: 600;
+}
+
+tr th .col {
+    font-weight: 700;
+}
+
+tbody tr {
+    font-weight: 400;
+}
+
+.sub-btn .btn {
+    width: 150px;
+    height: auto;
+}
+
+
+.btn-danger {
+    --bs-btn-bg: #c55827;
+    --bs-btn-border-color: none;
+    --bs-btn-hover-bg: #9d3310;
+    --bs-btn-hover-border-color: transparent;
+}
+
+.fade:not(.show) {
+    opacity: 1;
+}
+
+
+.modal {
+
+    --bs-modal-header-border-color: none;
+}
+
+
+h1 .c1 {
+    color: red;
+}
+
+
+h1 .c2 {
+    color: rgb(233, 119, 12);
+}
+
+
+h1 .c3 {
+    color: green;
+}
+
+
+.fa-arrows-to-dot {
+    color: rgb(122, 17, 17);
+}
+
+.modal-content {
+    width: 102%;
+}
+
+button.margin {
+    margin-left: 68%;
+}
+
+
+.btn-secondary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #d77728;
+    --bs-btn-hover-bg: #e59944;
+
+}

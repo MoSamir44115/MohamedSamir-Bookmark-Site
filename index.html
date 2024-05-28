@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmark</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+        rel="stylesheet" />
+    <link
+        href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAuwAAAAAAAADdAAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAERERERERERERERARERERERERAgERERERERAjIBERERERAjIyARERERAjICMgERERAjIBAjIBERECIBEQIyAREQABERECMgERERERERAjIBEREREREQIyARERERERECMgERERERERAiAREREREREQABERERERERERERERERERERH//wAA+/8AAPH/AADg/wAAwH8AAIA/AAAEHwAADg8AAB8HAAD/gwAA/8EAAP/gAAD/8AAA//gAAP//AAD//wAA"
+        rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div class="bg-image vh-cust">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mt-5">
+                    <h1 class="w-auto m-auto mb-5  text-center pt-5">BookMarker</h1>
+                    <hr />
+                    <div class="middle-section">
+                        <p class="text-center">
+                            <i class="me-2 fa-solid fa-bookmark"></i>Bookmark Your Favourite
+                            Sites<i class="ms-2 fa-solid fa-bookmark"></i>
+                        </p>
+
+                        <div class="bookmark-section">
+                            <h6 class="mb-3 fw-bold ps-1">
+                                <i class="pe-2 fa-book fa-solid"></i>Site Name
+                            </h6>
+                            <input value="" id="siteName" type="text" class="focus-ring-warning form-control"
+                                oninput="Validation(this)" placeholder="Bookmark Name" />
+
+
+
+
+
+
+
+
+
+                        </div>
+
+                        <div class="mt-4 url-section">
+                            <h6 class="mb-3 fw-bold ps-1">
+                                <i class="pe-2 fa-solid fa-link"></i>Site URL
+                            </h6>
+                            <input value="" id="webUrl" type="text" oninput="Validation(this)" class="form-control"
+                                placeholder="Website URL" />
+
+
+
+
+
+
+
+                        </div>
+
+                        <div class="mt-4 text-center sub-btn">
+                            <button id="btn" class="btn btn-danger">Submit</button>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="mb-3 d-flex align-items-center  text-center">
+                        <button id="delAll" class="col-3 btn btn-danger">Delete All</button>
+                    </div>
+                    <table id="tableTable" class="table w-color text-center">
+                        <thead>
+                            <tr>
+                                <th scope="col">Index</th>
+                                <th scope="col">Website Name</th>
+                                <th scope="col">Website Url</th>
+                                <th scope="col">Visit</th>
+                                <th scope="col">Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody id="items">
+                            <td class="d-none"><button id="visit" class="btn btn-success">Visit</button></td>
+                            <td class="d-none"><button id="del" class="btn btn-warning">Delete</button></td>
+
+                        </tbody>
+                    </table>
+                    <div class="mt-5 modal" id=" Modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class=" modal-header">
+                                    <h1 class=" modal-title fs-5" id="exampleModalLabel"><i
+                                            class="c1 fa-solid fa-circle"></i><i
+                                            class=" c2 mx-1 fa-solid fa-circle"></i><i
+                                            class=" c3 fa-solid fa-circle"></i></h1>
+                                            <button id="closeModal" type="button" class="margin btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Site Name Or Url Is Not Valid,Please follow the rules below :</p>
+                                    <ul class="list-unstyled">
+                                        <li class="li"><i class="me-3 fa-solid fa-arrows-to-dot"></i><span>Site Name
+                                                Must Contain At Least 3 Characters</span></li>
+                                        <li class="li"><i class="me-3 fa-solid fa-arrows-to-dot"></i><span>Site URL Must
+                                                Be Valid , And Starts With https://www.</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../Assignment 3/js/bootstrap.bundle.min.js"></script>
+    <script src="js/javacode.js"></script>
+</body>
+
+</html>
